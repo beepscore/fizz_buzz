@@ -24,7 +24,19 @@ class TestFizzBuzz < Test::Unit::TestCase
       assert_equal('chocolate', @my_fizz_buzz.fizz_buzz(15))
       assert_equal('chocolate', @my_fizz_buzz.fizz_buzz(90))
     end
-    
+
+    should "02 fizz_array" do
+      puts "fizz_array"
+      assert_equal('', @my_fizz_buzz.fizz_array[1])
+      assert_equal('fizz', @my_fizz_buzz.fizz_array[3])
+      assert_equal('fizz', @my_fizz_buzz.fizz_array[6])
+      assert_equal('buzz', @my_fizz_buzz.fizz_array[5])
+      assert_equal('buzz', @my_fizz_buzz.fizz_array[100])
+      assert_equal('buzz', @my_fizz_buzz.fizz_array[20])
+      assert_equal('chocolate', @my_fizz_buzz.fizz_array[15])
+      assert_equal('chocolate', @my_fizz_buzz.fizz_array[90])
+    end
+
   end
 
 end

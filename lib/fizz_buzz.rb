@@ -22,10 +22,12 @@ class FizzBuzz
     end
   end
 
-  def list_replies
+  def fizz_array
+    result_array = []
     1.upto(100) do |index|
-      puts(index, ' ', fizz_buzz(index))
+      result_array[index] = self.fizz_buzz(index)
     end
+    result_array
   end
 
 end
